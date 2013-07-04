@@ -125,6 +125,12 @@ otherdrops:
         WITCH:
         WITHER:
         ENDER_DRAGON:
+        CREEPER@POWERED:
+        CREEPER@UNPOWERED:
+            - tool: ALL
+              drop: CREEPER@POWERED
+              quantity: 1
+
 ### Slime
         SLIME:
             #. MoreMobs
