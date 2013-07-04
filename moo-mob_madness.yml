@@ -146,6 +146,17 @@ otherdrops:
               potioneffect.drop: SPEED@100@2
               chance: 50
               flag: UNIQUE
+            #. OtherZombies
+            - trigger: MOBSPAWN
+              drop: *skeletonJockey
+              quantity: 1
+              chance: 50
+              flag: UNIQUE
+            - trigger: MOBSPAWN
+              drop: *zombieJockey
+              quantity: 1
+              chance: 50
+              flag: UNIQUE
         CAVE_SPIDER:
             #. MonsterMadness
             - trigger: MOBSPAWN
