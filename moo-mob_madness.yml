@@ -12,6 +12,8 @@ aliases:
     - &skeletonJockey SKELETON@eq:hands:BOW%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H^SPIDER@20H
     - &zombieJockey ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H^SPIDER@20H
     - &bowSkeleton SKELETON@eq:hands:BOW%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H
+    - &slimeKing SLIME@40!!~Slime King
+    - &magmacubeKing MAGMA_CUBE@40!!~Slime King
 
 otherdrops:
         ZOMBIE:
@@ -122,13 +124,13 @@ otherdrops:
         SLIME:
             #. MoreMobs
             - trigger: MOBSPAWN
-              drop: SLIME@50
+              drop: *slimeKing
               chance: 1
               flag: UNIQUE
         MAGMA_CUBE:
             #. MoreMobs
             - trigger: MOBSPAWN
-              drop: MAGMA_CUBE@50
+              drop: *magmacubeKing
               chance: 1
               flag: UNIQUE
 ### Spider
