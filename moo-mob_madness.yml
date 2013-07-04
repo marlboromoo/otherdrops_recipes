@@ -45,11 +45,6 @@ otherdrops:
               chance: 10
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: *ghostSamurai
-              quantity: 1
-              chance: 40
-              flag: UNIQUE
-            - trigger: MOBSPAWN
               drop: *ghostWarrior
               quantity: 1
               chance: 40
@@ -115,6 +110,11 @@ otherdrops:
               chance: 50
               flag: UNIQUE
             #. OtherZombies
+            - trigger: MOBSPAWN
+              drop: *ghostSamurai
+              quantity: 1
+              chance: 40
+              flag: UNIQUE
             - trigger: MOBSPAWN
               drop: *skeletonJockey
               quantity: 1
