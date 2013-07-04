@@ -9,8 +9,8 @@ aliases:
     - &leatherZombie ZOMBIE@eq:hands:IRON_AXE%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H
     - &ghostSamurai SKELETON@eq:hands:IRON_SWORD%1!!eq:head:CHAINMAIL_HELMET%1!!eq:chest:CHAINMAIL_CHESTPLATE%1!!eq:legs:CHAINMAIL_LEGGINGS%1!!eq:feet:CHAINMAIL_BOOTS%1!!100H~Ghost Samurai
     - &ghostWarrior ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:DIAMOND_HELMET%1!!eq:chest:DIAMOND_CHESTPLATE%1!!eq:legs:DIAMOND_LEGGINGS%1!!eq:feet:DIAMOND_BOOTS%1!!100H~Ghost Warrior
-    - &skeletonJockey SKELETON@eq:hands:BOW%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H^SPIDE@20H
-    - &zombieJockey ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H^SPIDE@20H
+    - &skeletonJockey SKELETON@eq:hands:BOW%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H^SPIDER@20H
+    - &zombieJockey ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H^SPIDER@20H
     - &bowSkeleton SKELETON@eq:hands:BOW%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H
 
 otherdrops:
