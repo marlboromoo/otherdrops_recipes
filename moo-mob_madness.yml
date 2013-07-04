@@ -1,0 +1,141 @@
+#. Ideas from "MoreMobs", "MonsterMadness", "OtherZombies".
+
+defaults:
+    biomes: ALL
+    worlds: [world]
+
+otherdrops:
+        ZOMBIE:
+            #. MonsterMadness
+            - tool: ALL
+              drop: ZOMBIE
+              quantity: 1
+              chance: 50
+              flag: UNIQUE
+            - tool: ALL
+              drop: SKELETON
+              quantity: 1
+              chance: 10
+              flag: UNIQUE
+            #. OtherZombies
+            - action: MOBSPAWN
+              drop: ZOMBIE@20H
+              quantity: 1
+              chance: 40
+              flag: UNIQUE
+            - action: MOBSPAWN
+              drop: GIANT@50H
+              quantity: 1
+              chance: 7
+              flag: UNIQUE
+            - action: MOBSPAWN
+              drop: ZOMBIE@BABY
+              quantity: 1
+              chance: 30
+              flag: UNIQUE
+            - action: MOBSPAWN
+              drop: PIG_ZOMBIE
+              quantity: 1
+              chance: 3
+              flag: UNIQUE
+            - action: MOBSPAWN
+              drop: ZOMBIE@VILLAGER
+              quantity: 1
+              chance: 4
+              flag: UNIQUE
+            - action: MOBSPAWN
+              drop: ZOMBIE@VILLAGER!BABY
+              quantity: 1
+              chance: 4
+              flag: UNIQUE
+        GIANT:
+            #. OtherZombies
+        ZOMBIE@BABY:
+            #. OtherZombies
+        PIG_ZOMBIE:
+            #. OtherZombies
+        ZOMBIE@VILLAGER:
+            #. OtherZombies
+        ZOMBIE@VILLAGER!BABY:
+            #. OtherZombies
+        SKELETON:
+            #. MonsterMadness
+            - action: MOBSPAWN
+              drop: SKELETON@eq:hands:BOW%10
+              potioneffect.drop: INVISIBILITY@100@1
+              quantity: 1
+              chance: 50
+              flag: UNIQUE
+            #. OtherZombies
+            - action: MOBSPAWN
+              drop: SKELETON@eq:hands:WOOD_SWORD%30!!20H^SPIDE@20H
+              quantity: 1
+              chance: 20
+              flag: UNIQUE
+            - action: MOBSPAWN
+              drop: SKELETON@eq:hands:WOOD_SWORD%30!!20H^SPIDE@20H
+              quantity: 1
+              chance: 10
+              flag: UNIQUE
+        IRON_GOLEM:
+        BLAZE:
+        WITCH:
+        WITHER:
+        ENDER_DRAGON:
+### Slime
+        SLIME:
+            #. MoreMobs
+            - action: MOBSPAWN
+              drop: SLIME@50
+              chance: 1
+              flag: UNIQUE
+        MAGMA_CUBE:
+            #. MoreMobs
+            - action: MOBSPAWN
+              drop: MAGMA_CUBE@50
+              chance: 1
+              flag: UNIQUE
+### Spider
+        SPIDER:
+            #. MonsterMadness
+            - action: MOBSPAWN
+              drop: SPIDER
+              potioneffect.drop: SPEED@100@2
+              chance: 50
+              flag: UNIQUE
+        CAVE_SPIDER:
+            #. MonsterMadness
+            - action: MOBSPAWN
+              drop: SPIDER
+              potioneffect.drop: SPEED@100@2
+              chance: 50
+              flag: UNIQUE
+### Animal
+        WOLF:
+        BAT:
+### Player
+        PLAYER:
+            #. MonsterMadness
+            - action: HIT
+              tool: [SPIDER, CAVE_SPIDER]
+              potioneffect.victim: SLOW@40@4
+              chance: 50
+            - action: HIT
+              tool: [SPIDER, CAVE_SPIDER]
+              potioneffect.victim: POISON@100@2
+              chance: 50
+            - action: HIT
+              tool: ZOMBIE
+              potioneffect.attacker: DAMAGE_RESISTANCE@100@2
+              chance: 50
+            - action: HIT
+              tool: SKELETON
+              potioneffect.attacker: INVISIBILITY@100@1
+              chance: 50
+
+
+
+
+
+
+
