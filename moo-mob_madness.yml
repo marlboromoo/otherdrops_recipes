@@ -4,6 +4,14 @@ defaults:
     biomes: ALL
     worlds: [world]
 
+aliases:
+    - &ironZombie ZOMBIE@eq:hands:DIAMOND_AXE%1!!eq:head:IRON_HELMET%1!!eq:chest:IRON_CHESTPLATE%1!!eq:legs:IRON_LEGGINGS%1!!eq:feet:IRON_BOOTS%1!!20H
+    - &leatherZombie ZOMBIE@eq:hands:IRON_AXE%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H
+    - &ghostSamurai SKELETON@eq:hands:IRON_SWORD%1!!eq:head:CHAINMAIL_HELMET%1!!eq:chest:CHAINMAIL_CHESTPLATE%1!!eq:legs:CHAINMAIL_LEGGINGS%1!!eq:feet:CHAINMAIL_BOOTS%1!!100H~Ghost Samurai
+    - &ghostWarrior ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:DIAMOND_HELMET%1!!eq:chest:DIAMOND_CHESTPLATE%1!!eq:legs:DIAMOND_LEGGINGS%1!!eq:feet:DIAMOND_BOOTS%1!!100H~Ghost Warrior
+    - &skeletonJockey SKELETON@eq:hands:WOOD_SWORD%1!!20H^SPIDE@20H
+    - &bowSkeleton SKELETON@eq:hands:BOW%1
+
 otherdrops:
         ZOMBIE:
             #. MonsterMadness
@@ -19,19 +27,24 @@ otherdrops:
               flag: UNIQUE
             #. OtherZombies
             - trigger: MOBSPAWN
-              drop: ZOMBIE@eq:hands:IRON_AXE%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H
+              drop: *ironZombie
+              quantity: 1
+              chance: 60
+              flag: UNIQUE
+            - trigger: MOBSPAWN
+              drop: *leatherZombie
               quantity: 1
               chance: 10
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: SKELETON@eq:hands:IRON_SWORD%1!!eq:head:CHAINMAIL_HELMET%1!!eq:chest:CHAINMAIL_CHESTPLATE%1!!eq:legs:CHAINMAIL_LEGGINGS%1!!eq:feet:CHAINMAIL_BOOTS%1!!100H~Ghost Samurai
+              drop: *ghostSamurai
               quantity: 1
-              chance: 30
+              chance: 40
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:DIAMOND_HELMET%1!!eq:chest:DIAMOND_CHESTPLATE%1!!eq:legs:DIAMOND_LEGGINGS%1!!eq:feet:DIAMOND_BOOTS%1!!100H~Ghost Warrior
+              drop: *ghostWarrior
               quantity: 1
-              chance: 30
+              chance: 40
               flag: UNIQUE
             - trigger: MOBSPAWN
               drop: GIANT@50H
@@ -83,19 +96,19 @@ otherdrops:
         SKELETON:
             #. MonsterMadness
             - trigger: MOBSPAWN
-              drop: SKELETON@eq:hands:BOW%1
+              drop: *bowSkeleton
               potioneffect.drop: INVISIBILITY@100@1
               quantity: 1
               chance: 50
               flag: UNIQUE
             #. OtherZombies
             - trigger: MOBSPAWN
-              drop: SKELETON@eq:hands:WOOD_SWORD%1!!20H^SPIDE@20H
+              drop: *skeletonJockey
               quantity: 1
               chance: 20
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: SKELETON@eq:hands:WOOD_SWORD%1!!20H^SPIDE@20H
+              drop: *skeletonJockey
               quantity: 1
               chance: 10
               flag: UNIQUE
