@@ -14,6 +14,11 @@ aliases:
     - &bowSkeleton SKELETON@eq:hands:BOW%1!!eq:head:LEATHER_HELMET%1!!eq:chest:LEATHER_CHESTPLATE%1!!eq:legs:LEATHER_LEGGINGS%1!!eq:feet:LEATHER_BOOTS%1!!20H
     - &slimeKing SLIME@40!!~Slime King
     - &magmacubeKing MAGMA_CUBE@40!!~Slime King
+    - &giantZombie GIANT@500H
+    - &babyZombie ZOMBIE@BABY!!eq:hands:STONE_SWORD%1!!20H
+    - &pigZombie PIG_ZOMBIE@eq:hands:GOLD_SWORD%1!!20H
+    - &villagerZombie ZOMBIE@VILLAGER!!20H
+    - &babyVillagerZombie ZOMBIE@VILLAGER!!BABY!!20H
 
 otherdrops:
         ZOMBIE:
@@ -55,29 +60,29 @@ otherdrops:
               chance: 40
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: GIANT@500H
+              drop: *giantZombie
               potioneffect.drop: SPEED@200@10
               quantity: 1
               chance: 25
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: ZOMBIE@BABY!!eq:hands:STONE_SWORD%1!!20H
+              drop: *babyZombie
               potioneffect.drop: SPEED@100@1
               quantity: 1
               chance: 25
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: PIG_ZOMBIE@eq:hands:GOLD_SWORD%1!!20H
+              drop: *pigZombie
               quantity: 1
               chance: 25
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: ZOMBIE@VILLAGER!!20H
+              drop: *villagerZombie
               quantity: 1
               chance: 25
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: ZOMBIE@VILLAGER!!BABY
+              drop: *babyVillagerZombie
               quantity: 1
               chance: 25
               flag: UNIQUE
