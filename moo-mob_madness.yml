@@ -94,13 +94,13 @@ otherdrops:
         ZOMBIE@VILLAGER:
             #. OtherZombies
             - tool: ALL
-              drop: {XP/5, XP/10}
-            - tool: ALL
-              drop: DEFAULT
+              drop: EXP_BOTTLE
+              chance: 50
         ZOMBIE@VILLAGER!!BABY:
             #. OtherZombies
             - tool: ALL
-              drop: {XP/6, XP/11}
+              drop: EXP_BOTTLE
+              chance: 50
         SKELETON:
             #. MonsterMadness
             - trigger: MOBSPAWN
