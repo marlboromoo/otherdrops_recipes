@@ -53,7 +53,7 @@ otherdrops:
               chance: 40
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: GIANT@50H
+              drop: GIANT@500H
               potioneffect.drop: SPEED@200@10
               quantity: 1
               chance: 25
