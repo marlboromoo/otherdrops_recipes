@@ -24,12 +24,12 @@ otherdrops:
               chance: 30
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: SKELETON@eq:hands:IRON_SWORD%1!!eq:head:CHAINMAIL_HELMET%1!!eq:chest:CHAINMAIL_CHESTPLATE%1!!eq:legs:CHAINMAIL_LEGGINGS%1!!eq:feet:CHAINMAIL_BOOTS%1!!100H #!~Ghost Samurai
+              drop: SKELETON@eq:hands:IRON_SWORD%1!!eq:head:CHAINMAIL_HELMET%1!!eq:chest:CHAINMAIL_CHESTPLATE%1!!eq:legs:CHAINMAIL_LEGGINGS%1!!eq:feet:CHAINMAIL_BOOTS%1!!100H~Ghost Samurai
               quantity: 1
               chance: 10
               flag: UNIQUE
             - trigger: MOBSPAWN
-              drop: ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:DIAMOND_HELMET%1!!eq:chest:DIAMOND_CHESTPLATE%1!!eq:legs:DIAMOND_LEGGINGS%1!!eq:feet:DIAMOND_BOOTS%1!!100H #!~Ghost Warrior
+              drop: ZOMBIE@eq:hands:DIAMOND_SWORD%1!!eq:head:DIAMOND_HELMET%1!!eq:chest:DIAMOND_CHESTPLATE%1!!eq:legs:DIAMOND_LEGGINGS%1!!eq:feet:DIAMOND_BOOTS%1!!100H~Ghost Warrior
               quantity: 1
               chance: 10
               flag: UNIQUE
