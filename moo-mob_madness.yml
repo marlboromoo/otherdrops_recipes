@@ -19,7 +19,7 @@ aliases:
     - &pigZombie PIG_ZOMBIE@eq:hands:GOLD_SWORD%1!!20H
     - &villagerZombie ZOMBIE@VILLAGER!!20H
     - &babyVillagerZombie ZOMBIE@VILLAGER!!BABY!!20H
-    - &uniqe [UNIQUE, IN_MOB_ARENA]
+    - &unique [UNIQUE, IN_MOB_ARENA]
 
 otherdrops:
         ZOMBIE:
