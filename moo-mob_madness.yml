@@ -87,7 +87,7 @@ otherdrops:
             - tool: ALL
               drop: DIAMOND_ORE
               quantity: 1
-              chance: 50
+              chance: 25
         ZOMBIE@BABY:
             #. OtherZombies
         PIG_ZOMBIE:
