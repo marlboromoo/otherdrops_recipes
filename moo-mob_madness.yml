@@ -173,11 +173,11 @@ otherdrops:
               flag: *unique
 ### Animal
         WOLF:
-            - trigger: MOBSPAWN
-              drop: WOLF@ANGRY
-              potioneffect.drop: SPEED@100@2
-              chance: 50
-              flag: *unique
+            #- trigger: MOBSPAWN
+            #  drop: WOLF@ANGRY
+            #  potioneffect.drop: SPEED@100@2
+            #  chance: 50
+            #  flag: *unique
         BAT:
 ### Player
         PLAYER:
