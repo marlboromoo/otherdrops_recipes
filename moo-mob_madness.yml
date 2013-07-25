@@ -19,7 +19,7 @@ aliases:
     - &pigZombie PIG_ZOMBIE@eq:hands:GOLD_SWORD%1!!20H
     - &villagerZombie ZOMBIE@VILLAGER!!20H
     - &babyVillagerZombie ZOMBIE@VILLAGER!!BABY!!20H
-    - &unique [UNIQUE, IN_MOB_ARENA]
+    - &uniqueArena [UNIQUE, IN_MOB_ARENA]
 
 otherdrops:
         ZOMBIE:
@@ -33,55 +33,55 @@ otherdrops:
               drop: SKELETON
               quantity: 1
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
             #. OtherZombies
             - trigger: MOBSPAWN
               drop: *ironZombie
               quantity: 1
               chance: 60
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *leatherZombie
               quantity: 1
               chance: 10
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *ghostWarrior
               quantity: 1
               chance: 40
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *zombieJockey
               quantity: 1
               chance: 40
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *giantZombie
               potioneffect.drop: SPEED@200@10
               quantity: 1
               chance: 25
-              flag: *unique
+              flag: UNIQUE
             - trigger: MOBSPAWN
               drop: *babyZombie
               potioneffect.drop: SPEED@100@1
               quantity: 1
               chance: 25
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *pigZombie
               quantity: 1
               chance: 25
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *villagerZombie
               quantity: 1
               chance: 25
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *babyVillagerZombie
               quantity: 1
               chance: 25
-              flag: *unique
+              flag: *uniqueArena
         GIANT:
             #. OtherZombies
             - tool: ALL
@@ -109,18 +109,18 @@ otherdrops:
               potioneffect.drop: INVISIBILITY@100@1
               quantity: 1
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
             #. OtherZombies
             - trigger: MOBSPAWN
               drop: *ghostSamurai
               quantity: 1
               chance: 40
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *skeletonJockey
               quantity: 1
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
         IRON_GOLEM:
         BLAZE:
         WITCH:
@@ -138,13 +138,13 @@ otherdrops:
             - trigger: MOBSPAWN
               drop: *slimeKing
               chance: 1
-              flag: *unique
+              flag: *uniqueArena
         MAGMA_CUBE:
             #. MoreMobs
             - trigger: MOBSPAWN
               drop: *magmacubeKing
               chance: 1
-              flag: *unique
+              flag: *uniqueArena
 ### Spider
         SPIDER:
             #. MonsterMadness
@@ -152,32 +152,32 @@ otherdrops:
               drop: SPIDER
               potioneffect.drop: SPEED@100@2
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
             #. OtherZombies
             - trigger: MOBSPAWN
               drop: *skeletonJockey
               quantity: 1
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
             - trigger: MOBSPAWN
               drop: *zombieJockey
               quantity: 1
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
         CAVE_SPIDER:
             #. MonsterMadness
             - trigger: MOBSPAWN
               drop: SPIDER
               potioneffect.drop: SPEED@100@2
               chance: 50
-              flag: *unique
+              flag: *uniqueArena
 ### Animal
         WOLF:
             #- trigger: MOBSPAWN
             #  drop: WOLF@ANGRY
             #  potioneffect.drop: SPEED@100@2
             #  chance: 50
-            #  flag: *unique
+            #  flag: *uniqueArena
         BAT:
 ### Player
         PLAYER:
