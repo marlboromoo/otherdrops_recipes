@@ -2,7 +2,7 @@
 
 defaults:
     biomes: ALL
-    worlds: [world]
+    worlds: [world, maze]
 
 aliases:
     - &ironZombie ZOMBIE@eq:hands:DIAMOND_AXE%1!!eq:head:IRON_HELMET%1!!eq:chest:IRON_CHESTPLATE%1!!eq:legs:IRON_LEGGINGS%1!!eq:feet:IRON_BOOTS%1!!20H
