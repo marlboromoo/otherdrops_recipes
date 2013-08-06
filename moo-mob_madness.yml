@@ -207,26 +207,26 @@ otherdrops:
               potioneffect.attacker: SPEED@100@2
               chance: 50
             #. Elemental Dragons: http://dev.bukkit.org/bukkit-plugins/otherdrops/pages/basic-examples/
-            - action: HIT
+            - trigger: HIT
               tool: ENDER_DRAGON
               damage.victim: [LIGHTNING]
               message.victim: "&aThe dragon strikes you with a bolt of lightning!"
               chance: 5
               exclusive: 1
-            - action: HIT
+            - trigger: HIT
               tool: ENDER_DRAGON
               damage.victim: [FIRE@400]
               message.victim: "&aThe dragon hits you with its fire breath!"
               chance: 5
               exclusive: 1
-            - action: HIT
+            - trigger: HIT
               tool: ENDER_DRAGON
               damage.victim: [FIRE@200]
               event: EXPLOSION
               message.victim: "&aThe dragon hits you with an exploding fireball!"
               chance: 5
               exclusive: 1
-            - action: HIT
+            - trigger: HIT
               tool: ENDER_DRAGON
               potioneffect.victim: POISON@200@2
               message.victim: "&aThe dragon bites you with its poisonous fangs!"
