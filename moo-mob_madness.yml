@@ -210,26 +210,26 @@ otherdrops:
             - trigger: HIT
               tool: ENDER_DRAGON
               damage.victim: [LIGHTNING]
-              message.victim: "&aThe dragon strikes you with a bolt of lightning!"
+              message.victim: "&a終界龍招喚閃電擊中你!!"
               chance: 5
               exclusive: 1
             - trigger: HIT
               tool: ENDER_DRAGON
               damage.victim: [FIRE@400]
-              message.victim: "&aThe dragon hits you with its fire breath!"
+              message.victim: "&a終界龍對你使出烈焰吐息!!"
               chance: 5
               exclusive: 1
             - trigger: HIT
               tool: ENDER_DRAGON
               damage.victim: [FIRE@200]
               event: EXPLOSION
-              message.victim: "&aThe dragon hits you with an exploding fireball!"
+              message.victim: "&a終界龍發射的火球在你身旁爆炸!!"
               chance: 5
               exclusive: 1
             - trigger: HIT
               tool: ENDER_DRAGON
               potioneffect.victim: POISON@200@2
-              message.victim: "&aThe dragon bites you with its poisonous fangs!"
+              message.victim: "&a終界龍用它的毒牙狠狠的咬了你一口!!"
               chance: 5
               exclusive: 1
 
